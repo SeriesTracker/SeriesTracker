@@ -19,7 +19,7 @@ import { AiOutlineSearch } from "react-icons/ai";
 
 import notifications from "../../Assets/Sidebar/bell.svg";
 import dashboard from "../../Assets/Sidebar/grid.svg";
-import messages from "../../Assets/Sidebar/message-square.svg";
+import about from "../../Assets/Sidebar/message-square.svg";
 import settings from "../../Assets/Sidebar/settings.svg";
 import friends from "../../Assets/Sidebar/users.svg";
 import github from "../../Assets/Sidebar/github.svg";
@@ -77,7 +77,7 @@ const Sidebar = () => {
                             text="Find Series"
                             clickAction={() => navigate("/create-post")}
                         />
-                        <SidebarButton icon={messages} text="Messages" clickAction={() => navigate("/messages")} />
+                        <SidebarButton icon={about} text="About" clickAction={() => navigate("/about")} />
                         <SidebarButton icon={friends} text="Friends" clickAction={() => navigate("/friends")} />
                         <SidebarButton icon={settings} text="Settings" clickAction={() => navigate("/settings")} />
                         <SidebarLine />

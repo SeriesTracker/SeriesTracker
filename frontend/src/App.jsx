@@ -9,7 +9,7 @@ import Login from "./Pages/LoginPage/Login.jsx";
 import Profile from "./Pages/ProfilePage/Profile.jsx";
 import Settings from "./Pages/SettingsPage/Settings.jsx";
 import Friends from "./Pages/FriendsPage/Friends.jsx";
-import Messages from "./Pages/MessagesPage/Messages.jsx";
+import About from "./Pages/AboutPage/About.jsx";
 
 import "./Styles/app.css";
 import ContentRight from "./Components/ContentRight/ContentRight.jsx";
@@ -87,7 +87,7 @@ const App = () => {
                                 <Route path="/" element={<Homepage />} />
                                 <Route path="/settings" element={<Settings />} />
                                 <Route path="/friends" element={<Friends />} />
-                                <Route path="/messages" element={<Messages />} />
+                                <Route path="/about" element={<About />} />
                             </Routes>
                         </>
                     ) : (
