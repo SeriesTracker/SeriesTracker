@@ -19,7 +19,7 @@ import { AiOutlineSearch } from "react-icons/ai";
 
 import notifications from "../../Assets/Sidebar/bell.svg";
 import dashboard from "../../Assets/Sidebar/grid.svg";
-import messages from "../../Assets/Sidebar/message-square.svg";
+import about from "../../Assets/Sidebar/message-square.svg";
 import settings from "../../Assets/Sidebar/settings.svg";
 import friends from "../../Assets/Sidebar/users.svg";
 import github from "../../Assets/Sidebar/github.svg";
@@ -72,9 +72,13 @@ const Sidebar = () => {
                     <PanelOuter>
                         <SidebarButton icon={dashboard} text="Dashboard" clickAction={() => navigate("/")} />
                         {/* <SidebarButton icon={notifications} text="Notifications" /> */}
-                        <SidebarButton icon={notifications} text="Find Series" clickAction={() => navigate("/create-post")} />
-                        <SidebarButton icon={messages} text="Messages" clickAction={() => navigate("/messages")} />
+                        <SidebarButton
+                            icon={notifications}
+                            text="Find Series"
+                            clickAction={() => navigate("/create-post")}
+                        />
                         <SidebarButton icon={friends} text="Friends" clickAction={() => navigate("/friends")} />
+                        <SidebarButton icon={about} text="About" clickAction={() => navigate("/about")} />
                         <SidebarButton icon={settings} text="Settings" clickAction={() => navigate("/settings")} />
                         <SidebarLine />
                     </PanelOuter>
@@ -87,9 +91,9 @@ const Sidebar = () => {
                     <SidebarLine />
                     <ToggleButton />
                     <Contact>
-                        Reach us at: <br></br>
+                        Reach us at <br></br>
                     </Contact>
-                    <Email>business@seriestracker.net</Email>
+                    <Email>Our Socials:</Email>
                     <Socials>
                         <a href="https://github.com/SeriesTracker/SeriesTracker" target="_blank">
                             <GithubBack>
@@ -115,7 +119,8 @@ const Contact = styled.div`
 
 const Email = styled.div`
     justify-self: center;
-    font-size: 12px;
+    font-size: 0.8rem;
+    white-space: pre-wrap;
     margin-bottom: 50px;
     margin-top: 5px;
 `;
