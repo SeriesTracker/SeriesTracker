@@ -8,10 +8,10 @@ export const SidebarOuter = styled.div`
     margin-top: 90px;
     font-family: "Anek Malayalam", sans-serif;
     font-weight: 300;
-    width: 230px;
+    width: 170px;
     height: calc(100% - 90px);
     overflow-y: scroll;
-    font-size: 15px;
+    font-size: 0.8rem;
     padding: 22px 0 0 0;
     white-space: nowrap;
     display: grid;
@@ -67,8 +67,9 @@ export const SearchOuter = styled.div`
 export const SidebarLine = styled.div`
     position: relative;
     border-top: 1.5px solid rgba(137, 137, 137, 0.15);
-    left: 5%;
-    width: 90%;
+    margin: 0 auto 0 auto;
+    width: 95%;
+    left: 2.5%;
     align-self: center;
 `;
 
@@ -92,14 +93,15 @@ export const PanelOuterAccount = styled.div`
 export const SidebarBottomLine = styled.div`
     position: absolute;
     border-top: 1.5px solid rgba(137, 137, 137, 0.15);
-    width: 100%;
+    width: 95%;
+    left: 2.5%;
     align-self: center;
     bottom: 100px;
 `;
 
 export const AccountHeader = styled.div`
     position: absolute;
-    font-size: 14px;
+    font-size: 0.8rem;
     margin-left: 26px;
     margin-top: -30px;
     letter-spacing: 2px;
@@ -108,20 +110,18 @@ export const AccountHeader = styled.div`
 export const Trademark = styled.div`
     position: relative;
     bottom: 10px;
-    color: rgba(0, 0, 0, 0.5);
-    font-size: 15px;
-    left: 16%;
+    font-size: 0.7rem;
+    margin: 0 auto 0 auto;
     width: 83%;
-    color: ${(props) => props.theme.white};
     padding-bottom: 20px;
 
     &:before {
         content: "";
         position: absolute;
-        border-top: 1.5px solid rgba(137, 137, 137, 0.8);
-        width: 100%;
+        border-top: 1.5px solid rgba(137, 137, 137, 0.3);
+        width: 95%;
+        left: 2.5%;
         top: -10px;
-        transform: translate(-9%, 0);
     }
 `;
 

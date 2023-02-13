@@ -4,7 +4,7 @@ export const PanelItem = styled.div`
     width: 100%;
     height: 50px;
     display: flex;
-    padding: 0 0 0 20px;
+    padding: 0 0 0 10px;
     border-radius: 0 10px 10px 0;
     align-items: center;
     transition: 0.15s;

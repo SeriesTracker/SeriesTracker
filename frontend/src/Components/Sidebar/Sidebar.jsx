@@ -77,8 +77,8 @@ const Sidebar = () => {
                             text="Find Series"
                             clickAction={() => navigate("/create-post")}
                         />
-                        <SidebarButton icon={about} text="About" clickAction={() => navigate("/about")} />
                         <SidebarButton icon={friends} text="Friends" clickAction={() => navigate("/friends")} />
+                        <SidebarButton icon={about} text="About" clickAction={() => navigate("/about")} />
                         <SidebarButton icon={settings} text="Settings" clickAction={() => navigate("/settings")} />
                         <SidebarLine />
                     </PanelOuter>
@@ -91,9 +91,9 @@ const Sidebar = () => {
                     <SidebarLine />
                     <ToggleButton />
                     <Contact>
-                        Reach us at: <br></br>
+                        Reach us at <br></br>
                     </Contact>
-                    <Email>business@seriestracker.net</Email>
+                    <Email>Our Socials:</Email>
                     <Socials>
                         <a href="https://github.com/SeriesTracker/SeriesTracker" target="_blank">
                             <GithubBack>
@@ -119,7 +119,8 @@ const Contact = styled.div`
 
 const Email = styled.div`
     justify-self: center;
-    font-size: 12px;
+    font-size: 0.8rem;
+    white-space: pre-wrap;
     margin-bottom: 50px;
     margin-top: 5px;
 `;
